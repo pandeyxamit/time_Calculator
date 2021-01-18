@@ -35,9 +35,7 @@ def add_time(start, duration, day=None):
         else:
             if hours > 12:
                 hours = hours - 12
-
-            
-        
+                
     if not curr_day:
         if num_days == 0:
             new_time = "{}:{} {}".format(hours, minutes, period)
