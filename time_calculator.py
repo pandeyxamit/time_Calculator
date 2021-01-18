@@ -8,7 +8,7 @@ def add_time(start, duration, day=None):
     dur_minutes = int(duration.split(":")[1])
     num_days = 0
     day_num = 0
-    same_day = 0
+    
     minutes = minutes + dur_minutes
     if period == "PM":
         hours += 12
@@ -47,7 +47,6 @@ def add_time(start, duration, day=None):
         for key in weekdays.keys():
             if weekdays[key].lower() == curr_day.lower():
                 day_num = key
-                same_day = key
         
         day_num = (day_num + num_days) % 7
         
