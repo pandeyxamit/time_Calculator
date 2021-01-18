@@ -35,6 +35,7 @@ def add_time(start, duration, day=None):
         else:
             if hours > 12:
                 hours = hours - 12
+                period = "PM"
                 
     if not curr_day:
         if num_days == 0:
